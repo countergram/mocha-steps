@@ -13,6 +13,10 @@ describe('timeout', function() {
       done();
     });
 
+    it('C', function(done) {
+      done();
+    });
+
   });
 
   describe('step() async', function() {
@@ -26,6 +30,10 @@ describe('timeout', function() {
       done();
     });
 
+    step('C', function(done) {
+      done();
+    });
+
   });
 
   describe('step() async then sync', function() {
@@ -36,6 +44,10 @@ describe('timeout', function() {
     });
 
     step('B', function() {
+      
+    });
+
+    step('C', function() {
       
     });
 

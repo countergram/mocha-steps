@@ -1,10 +1,13 @@
-1..6
+1..9
 not ok 1 timeout it() A
 ok 2 timeout it() B
-not ok 3 timeout step() async A
-ok 4 timeout step() async B # SKIP -
-not ok 5 timeout step() async then sync A
-ok 6 timeout step() async then sync B # SKIP -
-# tests 4
-# pass 1
+ok 3 timeout it() C
+not ok 4 timeout step() async A
+ok 5 timeout step() async B # SKIP -
+ok 6 timeout step() async C # SKIP -
+not ok 7 timeout step() async then sync A
+ok 8 timeout step() async then sync B # SKIP -
+ok 9 timeout step() async then sync C # SKIP -
+# tests 5
+# pass 2
 # fail 3
