@@ -1,0 +1,10 @@
+1..6
+not ok 1 timeout it() A
+ok 2 timeout it() B
+not ok 3 timeout step() async A
+ok 4 timeout step() async B # SKIP -
+not ok 5 timeout step() async then sync A
+ok 6 timeout step() async then sync B # SKIP -
+# tests 4
+# pass 1
+# fail 3
